@@ -6,8 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+
 
 
 steps:
@@ -22,3 +21,9 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    addToPath: true
+    architecture: 'x64'
