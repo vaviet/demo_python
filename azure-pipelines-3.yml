@@ -20,6 +20,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '''demo1'''
+    PathtoPublish: 'demo1'
     ArtifactName: 'dropdemo1'
     publishLocation: 'Container'
